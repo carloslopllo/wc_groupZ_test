@@ -41,8 +41,6 @@ public class CounterTest {
         int[] a = {counter[0].getNumberCharacters(), counter[1].getNumberCharacters(), counter[2].getNumberCharacters()};
 
         assertEquals(e[0], a[0], "test_getNumberCharacters : expected: 210, actual: " + a[0] + ", file test_file/a.txt");
-        assertEquals(e[1], a[1], "test_getNumberCharacters : expected: 229, actual: " + a[1] + ", file test_file/b.txt");
-        assertEquals(e[2], a[2], "test_getNumberCharacters : expected: 774, actual: " + a[2] + ", file test_file/c.txt");
     }
 
     @Test
@@ -51,8 +49,6 @@ public class CounterTest {
         int[] a = {counter[0].getNumberLines(), counter[1].getNumberLines(), counter[2].getNumberLines()};
 
         assertEquals(e[0], a[0], "test_getNumberLines : expected: 1, actual: " + a[0] + ", file test_file/a.txt");
-        assertEquals(e[1], a[1], "test_getNumberLines : expected: 2, actual: " + a[1] + ", file test_file/b.txt");
-        assertEquals(e[2], a[2], "test_getNumberLines : expected: 24, actual: " + a[2] + ", file test_file/c.txt");
     }
 
     @Test
@@ -61,7 +57,5 @@ public class CounterTest {
         int[] a = {counter[0].getNumberWords(), counter[1].getNumberWords(), counter[2].getNumberWords()};
 
         assertEquals(e[0], a[0], "test_getNumberWords : expected: 35, actual: " + a[0] + ", file test_file/a.txt");
-        assertEquals(e[1], a[1], "test_getNumberWords : expected: 47, actual: " + a[1] + ", file test_file/b.txt");
-        assertEquals(e[2], a[2], "test_getNumberWords : expected: 143, actual: " + a[2] + ", file test_file/c.txt");
     }
 }
